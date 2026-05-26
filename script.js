@@ -3,6 +3,13 @@ const searchBtn=document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInput");
 const movieContainer = document.getElementById("movieContainer");
 searchBtn.addEventListener("click",searchMovies);
+searchInput.addEventListener("keypress", function(event) {
+
+  if (event.key === "Enter") {
+    searchMovies();
+  }
+
+});
 async function searchMovies() {
     const movieName=searchInput.value.trim();
     if (movieName==="") {
