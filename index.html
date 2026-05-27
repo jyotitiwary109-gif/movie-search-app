@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Movie Search App</h1>
     <div class="search-box">
         <input type="text" id="searchInput" placeholder="Search movie">
         <button id="searchBtn">Search</button>
+        <button id="themeBtn">🌙</button>
     </div>
     <div id="movieContainer"></div>
+    <div id="moviePopup" class="popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup">&times;</span>
+
+        <div id="popupDetails"></div>
+
+    </div>
+
+</div>
     <script src="script.js"></script>
     
 </body>
